@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 ###############################
 plt.figure(figsize=(6, 4))
 # plt.subplot(n_rows, n_cols, plot_num)
-plt.subplot(2, 2, 1)
+plt.subplot(2, 2, 1)    将figure分为2排2列  1指的是第一个小图
 plt.plot([0, 1], [0, 1])
 
 plt.subplot(222)
@@ -39,7 +39,7 @@ plt.subplot(2, 1, 1)
 # figure splits into 2 rows, 1 col, plot to the 1st sub-fig
 plt.plot([0, 1], [0, 1])
 
-plt.subplot(234)
+plt.subplot(234)   下半部分被分为了三个小的部分，就算上半部分只是一个图，下半部分的第一个小图的序号也会相应的
 # figure splits into 2 rows, 3 col, plot to the 4th sub-fig
 plt.plot([0, 1], [0, 2])
 
