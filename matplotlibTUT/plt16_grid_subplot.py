@@ -18,6 +18,7 @@ import matplotlib.gridspec as gridspec
 ##########################
 plt.figure()
 ax1 = plt.subplot2grid((3, 3), (0, 0), colspan=3)  # stands for axes
+将整个figure分为3X3的格子，ax1从（0，0）开始，列的跨度为3，可以想象成一个坐标轴，左上角为0点，纵向为x轴，横向为y轴，列的跨度沿着y轴，行的跨度沿着x轴
 ax1.plot([1, 2], [1, 2])
 ax1.set_title('ax1_title')
 ax2 = plt.subplot2grid((3, 3), (1, 0), colspan=2)
@@ -32,6 +33,7 @@ ax5 = plt.subplot2grid((3, 3), (2, 1))
 #########################
 plt.figure()
 gs = gridspec.GridSpec(3, 3)
+可以想象成3X3的二维数组
 # use index from 0
 ax6 = plt.subplot(gs[0, :])
 ax7 = plt.subplot(gs[1, :2])
