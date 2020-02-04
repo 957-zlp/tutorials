@@ -26,7 +26,8 @@ X,Y = np.meshgrid(x, y)
 # use plt.contourf to filling contours
 # X, Y and value for (X,Y) point
 plt.contourf(X, Y, f(X, Y), 8, alpha=.75, cmap=plt.cm.hot)
-
+8表示将高度分成几部分，0为两部分，所以8为分为10部分
+contourf contourfill 填充等高线
 # use plt.contour to add contour lines
 C = plt.contour(X, Y, f(X, Y), 8, colors='black', linewidth=.5)
 # adding label
