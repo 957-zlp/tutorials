@@ -20,7 +20,7 @@ y2 = -1 *y1
 
 fig, ax1 = plt.subplots()
 
-ax2 = ax1.twinx()    # mirror the ax1
+ax2 = ax1.twinx()    # mirror the ax1  将x轴镜像映射到右边
 ax1.plot(x, y1, 'g-')
 ax2.plot(x, y2, 'b-')
 
