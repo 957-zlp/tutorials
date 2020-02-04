@@ -21,19 +21,19 @@ Y2 = (1 - X / float(n)) * np.random.uniform(0.5, 1.0, n)
 
 plt.bar(X, +Y1, facecolor='#9999ff', edgecolor='white')
 plt.bar(X, -Y2, facecolor='#ff9999', edgecolor='white')
-
+#9999ff对应一种颜色
 for x, y in zip(X, Y1):
     # ha: horizontal alignment
-    # va: vertical alignment
+    # va: vertical alignment   对齐方式
     plt.text(x + 0.4, y + 0.05, '%.2f' % y, ha='center', va='bottom')
-
+#x+0.4表示对应的x值往右移动0.4个单位用来放置文本，y+0.05同理
 for x, y in zip(X, Y2):
     # ha: horizontal alignment
     # va: vertical alignment
     plt.text(x + 0.4, -y - 0.05, '%.2f' % y, ha='center', va='top')
 
 plt.xlim(-.5, n)
-plt.xticks(())
+plt.xticks(())   x轴上的数字会消失
 plt.ylim(-1.25, 1.25)
 plt.yticks(())
 
