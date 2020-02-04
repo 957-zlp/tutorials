@@ -28,21 +28,21 @@ plt.ylim((-2, 3))
 
 # set new ticks
 new_ticks = np.linspace(-1, 2, 5)
-plt.xticks(new_ticks)
+plt.xticks(new_ticks)   设置x轴的数值范围
 # set tick labels
 plt.yticks([-2, -1.8, -1, 1.22, 3],
-           ['$really\ bad$', '$bad$', '$normal$', '$good$', '$really\ good$'])
+           ['$really\ bad$', '$bad$', '$normal$', '$good$', '$really\ good$'])   美元符号可以使字体更好看，空格前面要加\才能被识别，\alpha可被识别为数学字符α
 # to use '$ $' for math text and nice looking, e.g. '$\pi$'
 
 # gca = 'get current axis'
 ax = plt.gca()
-ax.spines['right'].set_color('none')
+ax.spines['right'].set_color('none')  将右边的框隐藏
 ax.spines['top'].set_color('none')
 
 ax.xaxis.set_ticks_position('bottom')
 # ACCEPTS: [ 'top' | 'bottom' | 'both' | 'default' | 'none' ]
 
-ax.spines['bottom'].set_position(('data', 0))
+ax.spines['bottom'].set_position(('data', 0))  将下面的轴移至数据为0的位置
 # the 1st is in 'outward' | 'axes' | 'data'
 # axes: percentage of y axis
 # data: depend on y data
