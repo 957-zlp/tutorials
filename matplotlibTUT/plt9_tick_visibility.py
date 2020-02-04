@@ -33,5 +33,5 @@ ax.spines['left'].set_position(('data', 0))
 for label in ax.get_xticklabels() + ax.get_yticklabels():
     label.set_fontsize(12)
     # set zorder for ordering the plot in plt 2.0.2 or higher
-    label.set_bbox(dict(facecolor='white', edgecolor='none', alpha=0.8, zorder=2))
+    label.set_bbox(dict(facecolor='white', edgecolor='none', alpha=0.8, zorder=2))   α为可见度
 plt.show()
